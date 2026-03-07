@@ -28,7 +28,7 @@ medium: 1.2
 
 primary #e67e22 
 tints: #fdf2e9 #fae5d3
-shades: #cf711f
+shades: #cf711f #2e1907 #45260a
 grays: #555 #333 
 #6f6f6f - lightest gray to use with #fdf2e9
 
@@ -57,6 +57,11 @@ Spacing (px)
   margin: 0;
   box-sizing: border-box;
   padding: 0;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 126, 34, 0.3);
 }
 
 html {
@@ -102,6 +107,10 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {
@@ -138,16 +147,17 @@ body {
   letter-spacing: 0.75px;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
+  display: inline-block;
+  text-decoration: none;
   font-size: 2rem;
   font-weight: 600;
   padding: 1.6rem 3.2rem;
-  display: inline-block;
-  border-radius: 1rem;
-  text-decoration: none;
+  border-radius: 9px;
   cursor: pointer;
-
+  border: none;
   transition: all 0.3s;
 }
 
@@ -172,6 +182,18 @@ body {
 .secondary-btn:active {
   background-color: #fdf2e9;
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn-form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn-form:hover {
+  background-color: #fff;
+  color: #45260a;
 }
 
 .link:link,

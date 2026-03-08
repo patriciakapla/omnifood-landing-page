@@ -11,6 +11,7 @@
     />
     <link href="/css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/general.css" />
+    <link href="/css/queries.css" rel="stylesheet" />
     <title>Omnifood</title>
   </head>
   <body>
@@ -19,22 +20,26 @@
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li>
-            <a href="#" class="main-nav-link">Section 1</a>
+            <a href="#" class="main-nav-link">How it works</a>
           </li>
           <li>
-            <a href="#" class="main-nav-link">Section 2</a>
+            <a href="#" class="main-nav-link">Meals</a>
           </li>
           <li>
-            <a href="#" class="main-nav-link">Section 3</a>
+            <a href="#" class="main-nav-link">Testimonials</a>
           </li>
           <li>
-            <a href="#" class="main-nav-link">Section 4</a>
+            <a href="#" class="main-nav-link">Pricing</a>
           </li>
           <li>
-            <a href="#" class="main-nav-link nav-cta">Section 5</a>
+            <a href="#" class="main-nav-link nav-cta">Try for free</a>
           </li>
         </ul>
       </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav open" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav close" name="close-outline"></ion-icon>
+      </button>
     </header>
     <main class="main-container">
       <section class="section-hero">
@@ -503,7 +508,10 @@
                   <span>Delivery is free</span>
                 </li>
                 <li class="list-item">
-                  <ion-icon class="x-icon" name="close-outline"></ion-icon>
+                  <ion-icon
+                    class="x-icon last-icon"
+                    name="close-outline"
+                  ></ion-icon>
                 </li>
               </ul>
             </div>
@@ -545,7 +553,7 @@
                 </li>
                 <li class="list-item">
                   <ion-icon
-                    class="icon-diet"
+                    class="icon-diet last-icon"
                     name="checkmark-outline"
                   ></ion-icon>
                   <span>Get access to latest recipes</span>
@@ -701,7 +709,7 @@
             <li><a href="#" class="footer-link">Android app</a></li>
           </ul>
         </nav>
-        <nav>
+        <nav class="nav-col">
           <p class="footer-heading">Company</p>
 
           <ul class="footer-nav">
@@ -711,7 +719,7 @@
             <li><a href="#" class="footer-link">Careers</a></li>
           </ul>
         </nav>
-        <nav>
+        <nav class="nav-col">
           <p class="footer-heading">Resources</p>
           <ul class="footer-nav">
             <li><a href="#" class="footer-link">Recipe directory</a></li>

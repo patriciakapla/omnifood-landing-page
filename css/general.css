@@ -66,6 +66,8 @@ Spacing (px)
 
 html {
   font-size: 62.5%;
+  /* sets rem to 10px */
+  overflow-x: hidden;
 }
 
 body {
@@ -73,6 +75,9 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+
+  /* only works if there is nothing absolutely positioned in relation to body */
+  overflow-x: hidden;
 }
 
 /*****************************/
@@ -107,9 +112,9 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.grid--5-cols {
+/* .grid--5-cols {
   grid-template-columns: repeat(5, 1fr);
-}
+} */
 
 .heading-primary,
 .heading-secondary,
@@ -236,4 +241,5 @@ strong {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.4;
 }

@@ -63,3 +63,19 @@ allLinks.forEach(function (link) {
       headerEl.classList.toggle("nav-open");
   });
 });
+
+// set nav to sticky after hero section
+const sectionHeroEl = document.querySelector(".section-hero");
+const observer = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    if (ent.isIntersecting === false) document.body.classList.add("sticky");
+    else document.body.classList.remove("sticky");
+  },
+  {
+    root: null, // viewport
+    threshold: 0, // 0% of the section hero is in viewport
+    rootMargin: "-70px",
+  },
+);
+observer.observe(sectionHeroEl);

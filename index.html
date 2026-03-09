@@ -12,6 +12,12 @@
     <link href="/css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/general.css" />
     <link href="/css/queries.css" rel="stylesheet" />
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script defer src="/js/script.js"></script>
+
     <title>Omnifood</title>
   </head>
   <body>
@@ -20,19 +26,19 @@
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li>
-            <a href="#" class="main-nav-link">How it works</a>
+            <a href="#how" class="main-nav-link">How it works</a>
           </li>
           <li>
-            <a href="#" class="main-nav-link">Meals</a>
+            <a href="#meals" class="main-nav-link">Meals</a>
           </li>
           <li>
-            <a href="#" class="main-nav-link">Testimonials</a>
+            <a href="#testimonials" class="main-nav-link">Testimonials</a>
           </li>
           <li>
-            <a href="#" class="main-nav-link">Pricing</a>
+            <a href="#pricing" class="main-nav-link">Pricing</a>
           </li>
           <li>
-            <a href="#" class="main-nav-link nav-cta">Try for free</a>
+            <a href="#cta" class="main-nav-link nav-cta">Try for free</a>
           </li>
         </ul>
       </nav>
@@ -53,10 +59,10 @@
               eat healthy again. Tailored to your personal tastes and
               nutritional needs.
             </p>
-            <a href="#" class="btn main-btn margin-right-sm"
+            <a href="#cta" class="btn main-btn margin-right-sm"
               >Start eating well</a
             >
-            <a href="#" class="btn secondary-btn">Learn more &dArr;</a>
+            <a href="#how" class="btn secondary-btn">Learn more &dArr;</a>
             <div class="delivered-meals">
               <div class="delivered-imgs">
                 <img
@@ -116,7 +122,7 @@
           </div>
         </div>
       </section>
-      <section class="section-how">
+      <section class="section-how" id="how">
         <div class="container">
           <span class="subheading">How it works</span>
           <h2 class="heading-secondary">
@@ -136,6 +142,7 @@
                 no matter what diet you follow!
               </p>
             </div>
+
             <div class="step-img-box">
               <img
                 src="/img/app/app-screen-1.png"
@@ -170,6 +177,7 @@
                 can change delivery schedule and address daily!
               </p>
             </div>
+
             <div class="step-img-box">
               <img
                 src="/img/app/app-screen-3.png"
@@ -180,7 +188,7 @@
           </div>
         </div>
       </section>
-      <section class="section-meals">
+      <section class="section-meals" id="meals">
         <div class="container">
           <span class="subheading">Meals</span>
           <h2 class="heading-secondary">
@@ -333,7 +341,7 @@
         </div>
       </section>
 
-      <section class="section-testimonials">
+      <section class="section-testimonials" id="testimonials">
         <div class="testimonials-container">
           <span class="subheading">Testimonials</span>
           <h2 class="heading-secondary">Once you try it, you can't go back</h2>
@@ -467,7 +475,7 @@
           </figure>
         </div>
       </section>
-      <section class="section-pricing">
+      <section class="section-pricing" id="pricing">
         <div class="container">
           <span class="subheading">Pricing</span>
           <h2 class="heading-secondary">
@@ -604,7 +612,7 @@
         </div>
       </section>
 
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
@@ -680,7 +688,8 @@
             </li>
           </ul>
           <p class="copyright">
-            copyright &copy; 2026 by Omnifood Inc. All rights reserved
+            copyright &copy; <span class="year"></span> by Omnifood Inc. All
+            rights reserved
           </p>
         </div>
         <div class="address-col">
